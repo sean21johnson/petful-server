@@ -1,63 +1,65 @@
 class Queue {
-  constructor() {
-    // Set initial data.
-    this.first = null;
-    this.last = null;
-  }
+	constructor() {
+		this.first = null;
+		this.last = null;
+		this.length = 0;
+	}
 
-  enqueue(data) {
-    const node = new _Node(data);
+	enqueue(data) {
+		const node = new _Node(data);
 
-    if (this.first === null) {
-      this.first = node;
-    }
-    if (this.last) {
-      this.last.next = node;
-    }
-    this.last = node;
-  }
+		this.length++;
 
-  dequeue() {
-    if (this.first === null) {
-      return;
-    }
+		if (this.first === null) {
+			this.first = node;
+		}
+		if (this.last) {
+			this.last.next = node;
+		}
+		this.last = node;
+	}
 
-    const node = this.first;
-    this.first = this.first.next
+	dequeue() {
+		if (this.first === null) {
+			return;
+		}
 
-    if (node === this.last) {
-      this.last = null;
-    }
+		this.length--;
 
-    return node.value;
-  }
+		const node = this.first;
+		this.first = this.first.next;
 
-  show() {
-    if (this.first === null) {
-      return "No items remaining in the Queue"
-    }
-    if (this.first) {
-      return this.first;
-    }
-  }
+		if (node === this.last) {
+			this.last = null;
+		}
 
-  all() {
-    let current = this.first;
-    let allNodes = [];
+		return node.value;
+	}
 
-    while (current != null) {
-      allNodes.push(current);
-      current = current.next;
-    }
-    return allNodes;
-  }
+	show() {
+		if (this.first === null) {
+			return null;
+		}
+		return this.first.value;
+	}
+
+	all() {
+		let allNodes = [];
+		let current = this.first;
+
+		while (current != null) {
+			allNodes.push(current.value);
+			current = current.next;
+		}
+		return allNodes;
+	}
 }
 
 class _Node {
-  constructor(value) {
-    this.value = value;
-    this.next = null;
-  }
+	constructor(value) {
+		this.value = value;
+		this.next = null;
+	}
 }
 
-module.exports = Queue
+module.exports = Queue;
