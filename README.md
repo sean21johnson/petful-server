@@ -36,7 +36,7 @@ This server-side application was created with:
 
 ➖➖/people  
 (GET) returns names of people in the Petful adoption line  
-(POST) adds the submitted name to the end of our Petful adoption line
+(POST) adds the submitted name to the end of the Petful adoption line
 
 ➖➖/cat  
 (GET) returns name and details of the 1 cat that is next up to be adopted  
