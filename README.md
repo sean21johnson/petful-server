@@ -6,7 +6,7 @@
 
 [View the Petful app here](https://petful-client-nu-taupe.vercel.app/adoption)
 
-[View the Petful server repo here](https://github.com/sean21johnson/petful-client)
+[View the Petful client repo here](https://github.com/sean21johnson/petful-client)
 
 **Petful** is a platform that was created to facilitate the adoption of cats and dogs. Our goal at Petful is to make adopting fair and efficient. Most importantly, we want to put these lovely
 pets in homes ASAP. We are proud to say that every 5 seconds we match a pet with a new owner. Just add your name to the queue and wait your turn in line. When it is your turn, you have the opportunity to adopt the next available dog, next available cat, or both the cat and the dog! After you make your decision, a Petful representative will contact you shortly thereafter to schedule a pet dropoff.
