@@ -40,12 +40,12 @@ This server-side application was created with:
 
 ➖➖/cat  
 (GET) returns name and details of the 1 cat that is next up to be adopted  
-(DELETE) 'adopts' the next cat in line, as well as removing the name of the new owner from the adoption line
+(DELETE) adopts the next cat in line, and removes the name of the pet's new owner from the adoption line
 
 ➖➖/dog  
 (GET) returns name and details of the 1 dog that is next up to be adopted  
-(DELETE) 'adopts'the next dog in line, as well as removing the name of the new owner from the adoption line
+(DELETE) adopts the next dog in line, and removes the name of the pet's new owner from the adoption line
 
 ➖➖/pets  
 (GET) returns name and details of the 1 dog and 1 cat that are first up to be adopted  
-(DELETE) 'adopts' both the next cat and dog in line, as well as removing the name of the new owner from the adoption line
+(DELETE) adopts both the next cat and dog in line, and removes the name of the pet's new owner from the adoption line
